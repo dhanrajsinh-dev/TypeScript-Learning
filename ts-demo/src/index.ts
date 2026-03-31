@@ -1,29 +1,29 @@
 let message: string = "Hello TypeScript";
-console.log(message);
+// console.log(message);
 
 function add(a: number, b: number) {
   return a + b;
 }
 
-console.log(add(10, 20));
+// console.log(add(10, 20));
 
 let username: string = "dhanraj";
 let age: number = 25;
 let isactive: boolean = true;
 
 age = 26;
-console.log(age);
+// console.log(age);
 
 let data: any = 10;
 
 data = true;
-console.log(data);
+// console.log(data);
 
 let value: unknown = "hello";
 
-if (typeof value == "string") {
-  console.log(value.toUpperCase());
-}
+// if (typeof value == "string") {
+//   console.log(value.toUpperCase());
+// }
 
 type user = {
   name: string;
@@ -42,11 +42,11 @@ const User: user = {
 // | Function ends? | ✅ Yes       | ❌ No            |
 // | Example        | console.log | throw error     |
 
-function sayHello(): void {
-  console.log("hello");
-}
+// function sayHello(): void {
+//   console.log("hello");
+// }
 
-sayHello();
+// sayHello();
 
 function crash(): never {
   console.log("never"); //only this line giver error
@@ -67,10 +67,10 @@ function sum(arr: number[]): number {
   return arr.reduce((a, b) => a + b, 0);
 }
 
-console.log("sum:", sum([1, 2, 3, 4]));
+// console.log("sum:", sum([1, 2, 3, 4]));
 
 function getEvenNumber(arr: number[]): number[] {
   return arr.filter((num) => num % 2 === 0);
 }
 
-console.log(getEvenNumber([1, 2, 3, 4]));
+// console.log(getEvenNumber([1, 2, 3, 4]));
